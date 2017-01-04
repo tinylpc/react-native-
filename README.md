@@ -13,3 +13,11 @@
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 .build();
 ```
+
+2、React Native加载本地图片(Android)
+
+    1.将图片放到android/app/src/main/res/drawable-xxx目录下
+  
+    2.重新编译安装
+  
+    3.js文件中引用<Image source={require('image!launchscreen')}></Image>,launchscreen即为文件名
