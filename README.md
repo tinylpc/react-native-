@@ -21,3 +21,17 @@
     2.重新编译安装
   
     3.js文件中引用<Image source={require('image!launchscreen')}></Image>,launchscreen即为文件名
+    
+3、https://github.com/race604/react-native-viewpager改变pager高度方式
+
+   在ViewPager标签外层再包裹一层View标签即可
+   ```
+   <View style={styles.pager}>
+         <ViewPager style={styles.pager}
+                    dataSource={this.state.dataSource}
+                    renderPage={this._renderPage}
+                    isLoop={true}
+                    autoPlay={true}/>
+   </View>
+   ```
+  
