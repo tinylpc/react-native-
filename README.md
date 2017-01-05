@@ -27,8 +27,7 @@
    在ViewPager标签外层再包裹一层View标签即可
    ```
    <View style={styles.pager}>
-         <ViewPager style={styles.pager}
-                    dataSource={this.state.dataSource}
+         <ViewPager dataSource={this.state.dataSource}
                     renderPage={this._renderPage}
                     isLoop={true}
                     autoPlay={true}/>
